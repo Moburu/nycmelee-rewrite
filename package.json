@@ -12,6 +12,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
+    "@types/react-window": "^1.8.8",
     "autoprefixer": "10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -21,7 +22,9 @@
     "prettier": "^3.3.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-select": "^5.10.1"
+    "react-select": "^5.10.1",
+    "react-window": "^1.8.11",
+    "react-windowed-select": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "22.10.2",

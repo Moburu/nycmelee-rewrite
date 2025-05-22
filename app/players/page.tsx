@@ -30,7 +30,7 @@ export default function Page() {
   }, [])
 
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-screen flex flex-col">
         {loading ? <LoadingSpinner />
         : <MySelect entrants={options} />}
     </div>

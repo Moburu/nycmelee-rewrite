@@ -1,4 +1,5 @@
-import Select, { Options } from "react-select";
+import WindowedSelect, { createFilter, Options } from 'react-windowed-select';
+import React from "react";
 
 type Option = {
     label: string;
@@ -47,12 +48,14 @@ export default function MySelect({ entrants } : { entrants: Options<Option> }): 
     }
 
     return (
-        <Select
+        <WindowedSelect
             className="w-4/5 inline-block text-xl h-10 pl-2"
+            filterOption={createFilter({ ignoreAccents: false })}
             options={entrants}
             styles={darkStyles}
             placeholder="Search for someone's tag..."
             name="playerName"
+            windowThreshold={5}
         />
     )
 }
